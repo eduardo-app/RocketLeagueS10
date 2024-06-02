@@ -11,7 +11,7 @@ function Header() {
     return (
         <header>
             <Link to='/'>
-            <img alt="" id='logo' src={Logo} />
+            <img alt="RL" id='logo' src={Logo} />
             </Link>            
             <nav>
                 <ul>
