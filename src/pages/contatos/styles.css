@@ -1,0 +1,192 @@
+@font-face {font-family: "Bourgeois W00 Medium";
+    src: url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.eot");
+    src: url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.eot?#iefix")
+    format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.woff2")
+    format("woff2"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.woff")
+    format("woff"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.ttf")
+    format("truetype"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.svg#BourgeoisW00-Medium")
+    format("svg");
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#root {
+    width: 100%;
+    height: auto;
+}
+
+#background-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+#background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/dead_eye.png);
+    background-size: cover;
+    background-position: 0%;
+}
+
+#contact-container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    row-gap: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(31, 31, 31, 0.281);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px #000000;
+
+}
+
+.title-contact {
+    color: rgb(50, 197, 255);
+    text-shadow: 0 0 7px rgba(255, 255, 255, 0.507);
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    font-size: 45px;
+}
+
+.inputs {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    row-gap: 25px;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.input {
+    display: flex;
+    margin-top: 5px;
+    height: 25px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 5px 5px 0px #00000063;
+    background-color: rgba(255, 255, 255, 0.137);
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+.input-mensagem {
+    display: flex;
+    margin-top: 5px;
+    height: 180px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0px 5px 5px 0px #00000063;
+    background-color: rgba(255, 255, 255, 0.137);
+    resize: none;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.input-mensagem::-webkit-scrollbar {
+    width: 8px;
+}
+
+.input-mensagem::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 8px;
+    box-shadow: 0px 7px 7px 0px #000000b4;
+
+}
+
+.input-mensagem::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 197, 255);
+    border-radius: 25px;
+}
+
+.input-mensagem::selection {
+    color: rgb(50, 197, 255);  
+}
+
+#botao-enviar {
+    margin-left: 75%;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(50, 197, 255);
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: aliceblue;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #ffffff9f;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botao-enviar:hover {
+    background-color: aliceblue;
+    color: rgb(50, 197, 255);
+    box-shadow: 0px 0px 25px 0px #ffffff9f;
+
+}
+
+#contact-bottom-gradient {
+    position: absolute;
+    bottom: -90px;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) ,rgb(7, 37, 49));
+}
+
+
+@media(max-width: 768px) {
+
+    #background-overlay {
+        backdrop-filter: blur(3px);
+    }
+
+    #background {
+        background-position: 50%;
+    }
+
+    #contact-container {
+        top: 15%;
+    }
+
+    .contact-content {
+        width: 85%;
+        backdrop-filter: blur(4px);
+    }
+}

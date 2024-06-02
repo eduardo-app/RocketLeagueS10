@@ -1,0 +1,114 @@
+#comments-content {
+    width: 50%;
+    height: auto;
+}
+
+.pro-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.103);
+    backdrop-filter: blur(5px);
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center; 
+}
+
+.photo {
+    width: 47px;
+    height: 47px;
+    background-image: url(../../assets/eu.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    color: aliceblue;
+}
+
+.time {
+    font-size: 20px;
+    margin-left: 4px;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    color: aliceblue;
+}
+
+.comment {
+    font-size: 17px;
+    margin-left: 70px;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    color: aliceblue;
+}
+
+.coment-divisor {
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#interaction {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.like {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/icons/like.png);
+    background-size: cover;
+    filter: invert(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.answer {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/icons/answer.png);
+    background-size: cover;
+    filter: invert(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.share {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/icons/share.png);
+    background-size: cover;
+    filter: invert(100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.like:hover {
+    transform: scale(1.2);
+}
+.answer:hover {
+    transform: scale(1.2);
+}
+.share:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width: 768px) {
+
+    #comments-content {
+        width: 90%;
+    }
+
+}

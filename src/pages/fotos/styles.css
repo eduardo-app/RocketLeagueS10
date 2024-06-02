@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#photos-body {
+    background-color: rgb(25, 66, 94);
+}
+
+#header-gradient {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient( rgb(7, 37, 49),  rgb(25, 66, 94));
+}
+
+#photos-container {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#photos-content {
+    padding: 5px;
+    width: 70vw;
+    height: calc((70vw / 2) + 70vw);
+    background-color: black;
+    border-radius: 15px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+    "a a b b"
+    "c d b b"
+    "c d e e"
+    "f g h i"
+    "j j h l"
+    "j j k l";
+}
+
+.quad {
+    background-color: rgb(50, 197, 255);
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+.standing {
+    background-color: rgb(114, 234, 255);
+    border-radius: 15px;
+    transition: 0.6s;
+    
+}
+
+.lowered {
+    background-color: rgb(0, 114, 190);
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+.double-quad {
+    background-color: rgb(139, 255, 255);
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+.quad:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px #000000;
+    z-index: 1;
+}
+
+.standing:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px #000000;
+    z-index: 1;
+}
+
+.lowered:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px #000000;
+    z-index: 1;
+}
+
+.double-quad:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px 0px #000000;
+    z-index: 1;
+}
+
+
+.photo1 {
+    background-image: url(https://i.ytimg.com/vi/SsLQOky1_ws/maxresdefault.jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-area: a;
+}
+.photo2 {
+    background-image: url(https://uploads-ssl.webflow.com/5d65a8365e626f5f96249a53/5e8d2ea47a006ed755195412_RL%2022.jpg);
+    background-size: cover;
+    background-position: 60%;
+    grid-area: b;
+}
+.photo3 {
+    background-image: url(https://firstclasse.com.my/wp-content/uploads/2021/04/583505-768x768.jpg);
+    background-size: cover;
+    background-position: 65%;
+    grid-area: c;
+}
+.photo4 {
+    background-image: url(https://th.bing.com/th/id/OIP.45ElAPGyOFl7ZGzyB3AwtAHaPO?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-position: 60%;
+    grid-area: d;
+}
+.photo5 {
+    background-image: url(https://images.everyeye.it/img-notizie/rocket-league-stagione-2-tema-synthwave-immagini-video-rocket-pass-nuova-arena-v3-485543.jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-area: e;
+}
+.photo6 {
+    background-image: url(https://th.bing.com/th/id/R.adaeff397db9ff6a3b505c480a3f59a0?rik=cWy052RrHbpgBw&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: 70%;
+    grid-area: f;
+}
+.photo7 {
+    background-image: url(https://i.ytimg.com/vi/tws8BJtqNNY/maxresdefault.jpg);
+    background-size: cover;
+    background-position: 35%;
+    grid-area: g;
+}
+.photo8 {
+    background-image: url(https://carro.blog.br/wp-content/uploads/2020/10/pele-rocket-league-7-900x612.jpeg);
+    background-size: cover;
+    background-position: 42%;
+    grid-area: h;
+}
+.photo9 {
+    background-image: url(https://wallpaperset.com/w/full/0/4/a/464922.jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-area: i;
+}
+.photo10 {
+    background-image: url(https://store-images.s-microsoft.com/image/apps.42692.65187692735347017.f84682d1-0522-4d25-b1a5-a3b3e5105637.ed754c77-0c99-47c9-83b2-6e5621ffc899?mode=scale&q=90&h=1080&w=1920);
+    background-size: cover;
+    background-position: 45%;
+    grid-area: j;
+}
+.photo11 {
+    background-image: url(https://i.pinimg.com/originals/31/b0/e6/31b0e69d123d67dfd6341da616c2a024.jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-area: k;
+}
+.photo12 {
+    background-image: url(https://fotografias-neox.atresmedia.com/clipping/cmsimages01/2022/05/04/2D2E8A8A-98A2-4013-B045-A81F3BD6D381/rocket-league-suma-nuevo-contenido-basado-coches-oficiales-formula-1_69.jpg?crop=1920,1080,x0,y0&width=1280&height=720&optimize=low&format=jpg);
+    background-size: cover;
+    background-position: 50%;
+    grid-area: l;
+}
+
+#photos-bottom-gradient {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(  rgb(25, 66, 94), rgb(7, 37, 49));
+}
+
+footer {
+    margin-top: 0px;
+}
+
+
+@media(max-width: 768px) {
+
+    #photos-content {
+        width: 90%;
+        height: calc(90vw / 3 * 8);
+        grid-template-areas:
+        "a a c"
+        "d f c"
+        "d b b"
+        "g b b"
+        "e e h" 
+        "i k h"
+        "j j l"
+        "j j l";
+    }
+
+}

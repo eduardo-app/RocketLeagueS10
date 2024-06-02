@@ -1,0 +1,45 @@
+@font-face {font-family: "Bourgeois W00 Medium";
+    src: url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.eot");
+    src: url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.eot?#iefix")
+    format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.woff2")
+    format("woff2"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.woff")
+    format("woff"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.ttf")
+    format("truetype"),
+    url("//db.onlinewebfonts.com/t/6dbb2ef49faa5474e0d891864e3a6c2b.svg#BourgeoisW00-Medium")
+    format("svg");
+}
+
+
+#comments-background {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/dead_eye.png);
+    background-size: cover;
+    background-position: 50%;
+    filter: blur(5px);
+}
+
+
+#comments-container {
+    margin-top: 75px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 768px) {
+
+    #comments-container {
+        margin-top: 20px;
+    }
+
+}
